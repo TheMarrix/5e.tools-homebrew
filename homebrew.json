@@ -1062,7 +1062,7 @@
 			"level": 6,
 			"header": 2,
 			"entries": [
-				"The puppet gains advantage on its next attack roll on the current turn. The puppet can use this bonus action only if it hasn’t moved during this turn, and its speed becomes 0 until the end of the current turn."
+				"As a bonus action, the puppet gains advantage on its next attack roll on the current turn. The puppet can use this bonus action only if it hasn’t moved during this turn, and its speed becomes 0 until the end of the current turn."
 			]
 		},
 		{
