@@ -1,0 +1,1732 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "ARCH-MHB",
+				"abbreviation": "MHB",
+				"full": "Marrix Homebrew Archive",
+				"authors": [
+					"Marrix"
+				],
+				"version": "1.0",
+				"url": "",
+				"color": "6f31a3"
+			}
+		]
+	},
+	"class": [
+		{
+			"name": "Puppeteer",
+			"source": "ARCH-MHB",
+			"edition": "classic",
+			"hd": {
+				"number": 1,
+				"faces": 6
+			},
+			"proficiency": [
+				"dex",
+				"cha"
+			],
+			"spellcastingAbility": "cha",
+			"casterProgression": "puppeteer",
+			"preparedSpells": "<$level$> / 2 + <$cha_mod$>",
+			"preparedSpellsChange": "restLong",
+			"cantripProgression": [
+				2,
+				2,
+				2,
+				3,
+				3,
+				3,
+				3,
+				3,
+				3,
+				4,
+				4,
+				4,
+				4,
+				4,
+				4,
+				4,
+				4,
+				4,
+				4,
+				4
+			],
+			"startingProficiencies": {
+				"armor": [
+					"light"
+				],
+				"weapons": [
+					"simple"
+				],
+				"skills": [
+					{
+						"choose": {
+							"from": [
+								"arcana",
+								"deception",
+								"history",
+								"insight",
+								"perception",
+								"persuasion",
+								"sleight of hand"
+							],
+							"count": 2
+						}
+					}
+				]
+			},
+			"startingEquipment": {
+				"additionalFromBackground": true,
+				"default": [
+					"a {@item light crossbow|phb} and {@item crossbow bolts (20)|phb|20 bolts}",
+					"(a) a {@item entertainer's pack|phb} or (b) a {@item scholar's pack|phb}",
+					"(a) {@item potter's tools|phb} or (b) {@item weaver's tools|phb} or (c) {@item woodcarver's tools|phb}",
+					"{@item leather armor|phb} and any {@filter simple weapon|items|source=phb|category=basic|type=simple weapon}"
+				],
+				"goldAlternative": "{@dice 5d4 × 10|5d4 × 10|Starting Gold}",
+				"defaultData": [
+					{
+						"_": [
+							"light crossbow|phb",
+							"crossbow bolts (20)|phb"
+						]
+					},
+					{
+						"a": [
+							"entertainer's pack|phb"
+						],
+						"b": [
+							"scholar's pack|phb"
+						]
+					},
+					{
+						"a": [
+							"potter's tools|phb"
+						],
+						"b": [
+							"weaver's tools|phb"
+						],
+						"c": [
+							"woodcarver's tools|phb"
+						]
+					},
+					{
+						"_": [
+							"leather armor|phb",
+							{
+								"equipmentType": "weaponSimple"
+							}
+						]
+					}
+				]
+			},
+			"multiclassing": {
+				"requirements": {
+					"cha": 13
+				},
+				"proficienciesGained": {
+					"armor": [
+						"light"
+					],
+					"weapons": [
+						"simple"
+					]
+				}
+			},
+			"classTableGroups": [
+				{
+					"colLabels": [
+						"{@filter Cantrips Known|spells|level=0|class=Puppeteer}"
+					],
+					"rows": [
+						[
+							0
+						],
+						[
+							2
+						],
+						[
+							2
+						],
+						[
+							3
+						],
+						[
+							3
+						],
+						[
+							3
+						],
+						[
+							3
+						],
+						[
+							3
+						],
+						[
+							3
+						],
+						[
+							4
+						],
+						[
+							4
+						],
+						[
+							4
+						],
+						[
+							4
+						],
+						[
+							4
+						],
+						[
+							4
+						],
+						[
+							4
+						],
+						[
+							4
+						],
+						[
+							4
+						],
+						[
+							4
+						],
+						[
+							4
+						]
+					]
+				},
+				{
+					"title": "Spell Slots per Spell Level",
+					"colLabels": [
+						"{@filter 1st|spells|level=1|class=Puppeteer}",
+						"{@filter 2nd|spells|level=2|class=Puppeteer}",
+						"{@filter 3rd|spells|level=3|class=Puppeteer}",
+						"{@filter 4th|spells|level=4|class=Puppeteer}",
+						"{@filter 5th|spells|level=5|class=Puppeteer}"
+					],
+					"rowsSpellProgression": [
+						[
+							0,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							2,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							3,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							3,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							2,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							2,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							2,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							2,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							1,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							1,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							2,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							2,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							1
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							1
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							2
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							2
+						]
+					]
+				}
+			],
+			"classSpells": [
+				"Blade Ward",
+				"Dancing Lights",
+				"Friends",
+				"Light",
+				"Mage Hand",
+				"Mending",
+				"Mind Sliver|tce",
+				"Minor Illusion",
+				"Prestidigitation",
+				"Resistance",
+				"Thaumaturgy",
+				"Thorn Whip",
+				"Vicious Mockery",
+				"Alarm",
+				"Bane",
+				"Cause Fear|XGE",
+				"Charm Person",
+				"Command",
+				"Detect Magic",
+				"Disguise Self",
+				"Dissonant Whispers",
+				"Entangle",
+				"Expeditious Retreat",
+				"Faerie Fire",
+				"Feather Fall",
+				"Hex",
+				"Illusory Script",
+				"Jump",
+				"Longstrider",
+				"Mage Armor",
+				"Silent Image",
+				"Snare|XGE",
+				"Unseen Servant",
+				"Arcane Lock",
+				"Augery",
+				"Blindness/Deafness",
+				"Calm Emotions",
+				"Crown of Madness",
+				"Earthbind|XGE",
+				"Enhance Ability",
+				"Enlarge/Reduce",
+				"Enthrall",
+				"Hold Person",
+				"Knock",
+				"Levitate",
+				"Magic Mouth",
+				"Maximilian's Earthen Grasp|XGE",
+				"Nathair's Mischief|FTD",
+				"Phantasmal Force",
+				"Suggestion",
+				"Tasha's Mind Whip|TCE",
+				"Web",
+				"Bestow Curse",
+				"Enemies Abound|XGE",
+				"Fear",
+				"Feign Death",
+				"Major Image",
+				"Nondetection",
+				"Phantom Steed",
+				"Remove Curse",
+				"Slow",
+				"Speak with Dead",
+				"Tiny Servant|XGE",
+				"Charm Monster|XGE",
+				"Compulsion",
+				"Confusion",
+				"Dominate Beast",
+				"Phantasmal Killer",
+				"Animate Objects",
+				"Dominate Person",
+				"Geas",
+				"Hold Monster",
+				"Seeming"
+			],
+			"classFeatures": [
+				"Puppet Artisan|Puppeteer|ARCH-MHB|1",
+				{
+					"classFeature": "Puppet Specialization|Puppeteer|ARCH-MHB|1",
+					"gainSubclassFeature": true
+				},
+				"Spellcasting|Puppeteer|ARCH-MHB|2",
+				"Puppet Show|Puppeteer|ARCH-MHB|3",
+				"Ability Score Improvement|Puppeteer|ARCH-MHB|4",
+				"Playful Duet|Puppeteer|ARCH-MHB|5",
+				{
+					"classFeature": "Puppet Improvement|Puppeteer|ARCH-MHB|6",
+					"gainSubclassFeature": true
+				},
+				"Masterworks|Puppeteer|ARCH-MHB|7",
+				"Ability Score Improvement|Puppeteer|ARCH-MHB|8",
+				"Nimble Fingers|Puppeteer|ARCH-MHB|9",
+				{
+					"classFeature": "Puppet Improvement|Puppeteer|ARCH-MHB|10",
+					"gainSubclassFeature": true
+				},
+				"Resonance|Puppeteer|ARCH-MHB|11",
+				"Ability Score Improvement|Puppeteer|ARCH-MHB|12",
+				{
+					"classFeature": "Puppet Improvement|Puppeteer|ARCH-MHB|14",
+					"gainSubclassFeature": true
+				},
+				"Magic Item Savant|Puppeteer|ARCH-MHB|15",
+				"Ability Score Improvement|Puppeteer|ARCH-MHB|16",
+				"Magic Item Master|Puppeteer|ARCH-MHB|18",
+				"Ability Score Improvement|Puppeteer|ARCH-MHB|19",
+				"Soul of Artifice|Puppeteer|ARCH-MHB|20"
+			],
+			"subclassTitle": "Puppetman",
+			"hasFluff": true
+		}
+	],
+	"classFeature": [
+		{
+			"name": "Puppet Artisan",
+			"source": "ARCH-MHB",
+			"className": "Puppeteer",
+			"classSource": "ARCH-MHB",
+			"level": 1,
+			"entries": [
+				"Your craft begins with the art of shaping lifeless materials into animated vessels",
+				"You gain proficiency with one of the following artisan’s tools of your choice: {@item Potter's tools|phb} (ceramic), {@item Weaver's tools|phb} (fabric), or {@item Woodcarver's tools|phb} (wood). You use your chosen tool proficiency when creating, repairing, or enhancing your puppets. Regardless of your choice, all three are considered your Marionette Tools and can use any of the three types of tools interchangeably for features that reference your Marionette Tools, provided you have proficiency with the tool.",
+				"You also learn the {@spell Mending|phb} cantrip and can use your Marionette Tools as a {@quickref components|quick|2||Spellcasting Focus|phb} for your puppeteer spells.",
+				"At the end of a long rest, you can use your Marionette Tools to craft one {@table Creature Size and Space|XPHB|tiny} nonmagical puppet (you determine the appearence). Doing so requires 5 gp worth of materials, which are consumed in the process."
+			]
+		},
+		{
+			"name": "Puppet Specialization",
+			"source": "ARCH-MHB",
+			"className": "Puppeteer",
+			"classSource": "ARCH-MHB",
+			"level": 1,
+			"entries": [
+				"Your craft specializes in distinct forms of animated puppetry. Instead of choosing a traditional subclass, you define your craft by selecting two puppet types as your focus. These types determine the abilities of the puppets you can create and control.",
+				{
+					"type": "entries",
+					"name": "Binding Ritual",
+					"entries": [
+						"At the end of a long rest, you can use your Marionette Tools to perform a ritual that binds one {@table Creature Size and Space|XPHB|tiny}, nonmagical puppet to your Occult Strings, granting it one of your chosen puppet types. You cannot have more than one puppet of each type bound at the same time.",
+						"As an action, while touching a puppet, you can use your Marionette tools to unbind it. When the puppet becomes unbound, it immediately loses its puppet type and all related benefits, becoming a nonmagical puppet.",
+						"You can perform this ritual during the same long rest in which you create a puppet using your {@classFeature Puppet Artisan|Puppeteer|MHB|1} feature."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Puppet Control",
+					"entries": [
+						"Your puppets act on your turn and share your initiative count. A puppet can’t move or take any actions unless you direct it using a {@action Command Puppet|ARCH-MHB} action. You can only command puppets that are within your Occult Strings range (30 feet). If you are {@condition incapacitated|phb}, or if a puppet ends its turn outside your Occult Strings range (30 feet), it becomes {@condition paralyzed|phb} until it is within range again and you are no longer {@condition incapacitated|phb}.",
+						"If a puppet remains outside your Occult Strings range for 24 hours, it becomes unbound and reverts to a nonmagical puppet.",
+						"If a puppet is reduced to 0 hit points, it becomes broken. A broken puppet can no longer be commanded until it regains at least 1 hit point. If a broken puppet takes further damage, the DM may determine that the puppet is completely destroyed, depending on the circumstances. A puppet that remains broken for 24 hours without regaining at least 1 hit point, becomes unbound and reverts to a nonmagical puppet."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Occult Dice",
+					"entries": [
+						"You have a pool of Occult Dice, which are d6s, equal to your Charisma modifier plus your puppeteer level. When you cast {@spell Mending} using your Marionette Tools on a puppet, it regains hit points equal to the maximum amount of one Occult Die.",
+						"Your pool regains all expended dice when you finish a long rest. You can also expend a spell slot to immediately regain a number of Occult Dice equal to the slot’s level (no action required)."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Occult Stitch",
+					"entries": [
+						"As an action, you can touch a puppet within 5 feet and channel restorative energy through your Marionette Tools. You can expend a number of Occult Dice up to your Charisma modifier (minimum of one). The puppet regains hit points equal to the total rolled plus your Charisma modifier.",
+						"You can use this feature a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
+					]
+				},
+				{
+					"name": "Puppet Versatility",
+					"source": "ARCH-MHB",
+					"className": "Puppeteer",
+					"classSource": "ARCH-MHB",
+					"level": 1,
+					"isClassFeatureVariant": true,
+					"entries": [
+						"{@i Puppeteer {@variantrule optional class features|tce|optional feature}}",
+						"When you perform the Binding Ritual, you can replace one of your chosen puppet types with a different one. If you currently have a bound puppet of the replaced type, its puppet type immediately changes to the new type, along with all benefits granted by that new type."
+					]
+				}
+			]
+		},
+		{
+			"name": "Spellcasting",
+			"source": "ARCH-MHB",
+			"className": "Puppeteer",
+			"classSource": "ARCH-MHB",
+			"level": 2,
+			"entries": [
+				"Through occult rites and remarkable craftsmanship, you can cast puppeteer spells. See {@book chapter 10|PHB|10} for the general rules of spellcasting.",
+				{
+					"type": "entries",
+					"name": "Cantrips (0-Level Spells)",
+					"entries": [
+						"At 2nd level, you know two cantrips of your choice from the {@filter puppeteer spell list|spells|level=0|class=Puppeteer (MHB)}. At higher levels, you learn additional puppeteer cantrips of your choice, as shown in the Cantrips Known column of the Puppeteer table.",
+						"When you gain a level in this class, you can replace one of the puppeteer cantrips you know with another cantrip from the puppeteer spell list."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Preparing and Casting Spells",
+					"entries": [
+						"The Puppeteer table shows how many spell slots you have to cast your puppeteer spells. To cast one of your puppeteer spells of 1st level or higher, you must expend a slot of the spell's level or higher. You regain all expended spell slots when you finish a long rest.",
+						"You prepare the list of puppeteer spells that are available for you to cast, choosing from the {@filter puppeteer spell list|spells|class=Puppeteer (MHB)}. When you do so, choose a number of puppeteer spells equal to your Charisma modifier + half your puppeteer level, rounded down (minimum of one spell). The spells must be of a level for which you have spell slots.",
+						"For example, if you are a 5th-level puppeteer, you have four 1st-level and two 2nd-level spell slots. With an Charisma of 14, your list of prepared spells can include four spells of 1st or 2nd level, in any combination. If you prepare the 1st-level spell {@spell Dissonant Whispers}, you can cast it using a 1st-level or a 2nd-level slot. Casting the spell doesn't remove it from your list of prepared spells.",
+						"You can change your list of prepared spells when you finish a long rest. Preparing a new list of puppeteer spells requires time spent performing a ritual: at least 1 minute per spell level for each spell on your list."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Spellcasting Ability",
+					"entries": [
+						"Charisma is your spellcasting ability for your puppeteer spells; your force of personality and strength of presence allows you to manipulate magic with exceptional skill. You use your Charisma whenever a puppeteer spell refers to your spellcasting ability. In addition, you use your Charisma modifier when setting the saving throw DC for a puppeteer spell you cast and when making an attack roll with one.",
+						{
+							"type": "abilityDc",
+							"name": "Spell",
+							"attributes": [
+								"cha"
+							]
+						},
+						{
+							"type": "abilityAttackMod",
+							"name": "Spell",
+							"attributes": [
+								"cha"
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Ritual Casting",
+					"entries": [
+						"You can cast a puppeteer spell as a ritual if that spell has the ritual tag and you have the spell prepared."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Spellcasting Focus",
+					"entries": [
+						"You can use your Marionette tools as a spellcasting focus for your puppeteer spells."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Puppet Spells",
+					"entries": [
+						"You always have certain spells prepared after you reach particular levels in this class, as shown in the puppets spell table. These spells count as puppeteer spells for you, but they don’t count against the number of puppeteer spells you prepare.",
+						"When you cast a puppet spell, it originates from the matching puppet instead of you. The puppet is considered the point of origin for the spell, and any concentration required is maintained by the puppet instead of you. You must still use your own senses to perceive and choose targets for the spell. Puppet spells you cast do not require material components, regardless of cost."
+					]
+				}
+			]
+		},
+		{
+			"name": "Puppet Show",
+			"source": "ARCH-MHB",
+			"className": "Puppeteer",
+			"classSource": "ARCH-MHB",
+			"level": 3,
+			"entries": [
+				"You gain greater control over your puppets.",	
+				{
+					"type": "list",
+					"items": [
+						"When you make a {@skill Performance|phb} check that involves one or more of your puppets, you can add double your proficiency bonus to the check.",
+						"When you cast a spell, you can choose to treat one of your puppets as the point of origin for the spell. You must still be able to see the target, and the puppet must be within your Occult Strings range.",
+						"As a bonus action, you can see and hear through one of your puppets until the start of your next turn. While doing so, you are blind and deaf to your own surroundings."
+					]
+				}
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "ARCH-MHB",
+			"className": "Puppeteer",
+			"classSource": "ARCH-MHB",
+			"level": 4,
+			"entries": [
+				"When you reach 4th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+				"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+			]
+		},
+		{
+			"name": "Playful Duet",
+			"source": "ARCH-MHB",
+			"className": "Puppeteer",
+			"classSource": "ARCH-MHB",
+			"level": 5,
+			"entries": [
+				"Starting at 5th level, you command both puppets, whenever you take the {@action Command Puppet|ARCH-MHB|Major Command} action on your turn."
+			]
+		},
+		{
+			"name": "Puppet Improvement",
+			"source": "ARCH-MHB",
+			"className": "Puppeteer",
+			"classSource": "ARCH-MHB",
+			"level": 6,
+			"entries": [
+				"Your puppet's attacks now count as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage."
+			]
+		},
+		{
+			"name": "Masterworks",
+			"source": "ARCH-MHB",
+			"className": "Puppeteer",
+			"classSource": "ARCH-MHB",
+			"level": 7,
+			"entries": [
+				"Your mastery over puppetcraft and rituals grows. You gain the following:",
+				"Your proficiency bonus is now doubled for any ability check you make that uses your Marionette Tools.",
+				"The range of your Occult Strings increases to 60 feet.",
+				"At the end of a short or long rest, you can use your Marionette Tools to attune one magical item that requires attunement to one of your puppets. Each puppet can be attuned to one such item. This limit increases to two items at 13th level and three at 17th level.",
+				"If a puppet is destroyed, its attunement to any magic item immediately ends."
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "ARCH-MHB",
+			"className": "Puppeteer",
+			"classSource": "ARCH-MHB",
+			"level": 8,
+			"entries": [
+				"When you reach 8th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+				"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+			]
+		},
+		{
+			"name": "Nimble Fingers",
+			"source": "ARCH-MHB",
+			"className": "Puppeteer",
+			"classSource": "ARCH-MHB",
+			"level": 9,
+			"entries": [
+				"Your ability to swiftly manipulate your puppets via your Occult Strings is truly a marvel. You gain one additional reaction each round, but it can only be used with the {@action Command Puppet|ARCH-MHB|Reactive Command} reaction. An effect can only trigger one of your reactions.",
+				"Additionally, when you cast a spell that has a casting time of an action or use your Occult Stitch action, one of your puppets can move up to its speed or make one attack.",
+				"At 17th level, you gain a second additional reaction each round, following the same restriction."
+			]
+		},
+		{
+			"name": "Puppet Improvement",
+			"source": "ARCH-MHB",
+			"className": "Puppeteer",
+			"classSource": "ARCH-MHB",
+			"level": 10,
+			"entries": [
+				"Your puppets become stronger."
+			]
+		},
+		{
+			"name": "Resonance",
+			"source": "ARCH-MHB",
+			"className": "Puppeteer",
+			"classSource": "ARCH-MHB",
+			"level": 11,
+			"entries": [
+				"Through refined craftsmanship, you can anchor powerful magic within your creations.",
+				"Each of your puppets can attune to one magic item of rare rarity or lower, as long as the item has no other prerequisites (such as class, race, alignment, or spellcasting ability). A puppet gains the item’s passive benefits and can activate items that require spoken commands, conscious intent, or manual operation when commanded.",
+				"During a short or long rest, you can use your Puppetcrafter’s Tools to attune or un-attune one magic item to one of your puppets, provided the item is in your possession. If a puppet is destroyed, its attunement to any magic item immediately ends."
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "ARCH-MHB",
+			"className": "Puppeteer",
+			"classSource": "ARCH-MHB",
+			"level": 12,
+			"entries": [
+				"When you reach 12th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+				"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+			]
+		},
+		{
+			"name": "Puppet Improvement",
+			"source": "ARCH-MHB",
+			"className": "Puppeteer",
+			"classSource": "ARCH-MHB",
+			"level": 14,
+			"entries": [
+				"You gain a feature granted by your Puppeteer Specialist choice."
+			]
+		},
+		{
+			"name": "Magic Item Savant",
+			"source": "ARCH-MHB",
+			"className": "Puppeteer",
+			"classSource": "ARCH-MHB",
+			"level": 15,
+			"entries": [
+				"Your skill with magic items deepens:",
+				{
+					"type": "list",
+					"items": [
+						"You can attune to up to five magic items at once.",
+						"You ignore all class, race, spell, and level requirements on attuning to or using a magic item."
+					]
+				}
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "ARCH-MHB",
+			"className": "Puppeteer",
+			"classSource": "ARCH-MHB",
+			"level": 16,
+			"entries": [
+				"When you reach 16th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+				"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+			]
+		},
+		{
+			"name": "Magic Item Master",
+			"source": "ARCH-MHB",
+			"className": "Puppeteer",
+			"classSource": "ARCH-MHB",
+			"level": 18,
+			"entries": [
+				"You can now attune to up to six magic items at once."
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "ARCH-MHB",
+			"className": "Puppeteer",
+			"classSource": "ARCH-MHB",
+			"level": 19,
+			"entries": [
+				"When you reach 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+				"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+			]
+		},
+		{
+			"name": "Soul of Artifice",
+			"source": "ARCH-MHB",
+			"className": "Puppeteer",
+			"classSource": "ARCH-MHB",
+			"level": 20,
+			"entries": [
+				"You have developed a mystical connection to your magic items, which you can draw on for protection:",
+				{
+					"type": "list",
+					"items": [
+						"You gain a +1 bonus to all saving throws per magic item you are currently attuned to.",
+						"If you're reduced to 0 hit points but not killed outright, you can use your reaction to end one of your puppeteer infusions, causing you to drop to 1 hit point instead of 0."
+					]
+				}
+			]
+		}
+	],
+	"subclass": [
+		{
+			"name": "Acolyte Puppet",
+			"shortName": "Acolyte",
+			"source": "ARCH-MHB",
+			"className": "Puppeteer",
+			"classSource": "ARCH-MHB",
+			"edition": "classic",
+			"subclassFeatures": [
+				"Acolyte Puppet|Puppeteer|ARCH-MHB|Acolyte|ARCH-MHB|1",
+				"Conduit|Puppeteer|ARCH-MHB|Acolyte|ARCH-MHB|6",
+				"Improved Restore|Puppeteer|ARCH-MHB|Acolyte|ARCH-MHB|10",
+				"Improved Conduit|Puppeteer|ARCH-MHB|Acolyte|ARCH-MHB|14"
+			],
+			"hasFluffImages": true
+		},
+		{
+			"name": "Guardian Puppet",
+			"shortName": "Guardian",
+			"source": "ARCH-MHB",
+			"className": "Puppeteer",
+			"classSource": "ARCH-MHB",
+			"edition": "classic",
+			"subclassFeatures": [
+				"Guardian Puppet|Puppeteer|ARCH-MHB|Guardian|ARCH-MHB|1",
+				"Improved Guardian|Puppeteer|ARCH-MHB|Guardian|ARCH-MHB|6",
+				"Improved Guardian2|Puppeteer|ARCH-MHB|Guardian|ARCH-MHB|10",
+				"Improved Defender|Puppeteer|ARCH-MHB|Guardian|ARCH-MHB|14"
+			],
+			"hasFluffImages": true
+		},
+		{
+			"name": "Jester Puppet",
+			"shortName": "Jester",
+			"source": "ARCH-MHB",
+			"className": "Puppeteer",
+			"classSource": "ARCH-MHB",
+			"edition": "classic",
+			"subclassFeatures": [
+				"Jester Puppet|Puppeteer|ARCH-MHB|Jester|ARCH-MHB|1",
+				"Comedic Misfortune|Puppeteer|ARCH-MHB|Jester|ARCH-MHB|6",
+				"Overflowing Spirit|Puppeteer|ARCH-MHB|Jester|ARCH-MHB|10",
+				"Deepened Fear|Puppeteer|ARCH-MHB|Jester|ARCH-MHB|14"
+			],
+			"hasFluffImages": true
+		},
+		{
+			"name": "Shinobi Puppet",
+			"shortName": "Shinobi",
+			"source": "ARCH-MHB",
+			"className": "Puppeteer",
+			"classSource": "ARCH-MHB",
+			"edition": "classic",
+			"subclassFeatures": [
+				"Shinobi Puppet|Puppeteer|ARCH-MHB|Shinobi|ARCH-MHB|1",
+				"Steady Aim|Puppeteer|ARCH-MHB|Shinobi|ARCH-MHB|6",
+				"Evasion|Puppeteer|ARCH-MHB|Shinobi|ARCH-MHB|10",
+				"Improved Defender|Puppeteer|ARCH-MHB|Shinobi|ARCH-MHB|14"
+			],
+			"hasFluffImages": true
+		}
+	],
+	"subclassFeature": [
+		{
+			"name": "Acolyte Puppet",
+			"source": "ARCH-MHB",
+			"className": "Puppeteer",
+			"classSource": "ARCH-MHB",
+			"subclassShortName": "Acolyte",
+			"subclassSource": "ARCH-MHB",
+			"level": 1,
+			"entries": [
+				"flavor_shinobi",
+				{
+					"type": "statblock",
+					"tag": "creature",
+					"source": "ARCH-MHB",
+					"name": "Acolyte Puppet",
+					"page": 2,
+					"collapsed": true
+				}
+			]
+		},
+		{
+			"name": "Conduit",
+			"source": "ARCH-MHB",
+			"className": "Puppeteer",
+			"classSource": "ARCH-MHB",
+			"subclassShortName": "Acolyte",
+			"subclassSource": "ARCH-MHB",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"Once per day, when the puppet casts a Puppet Spell or you use your Puppet Show feature through it, the spell is treated as if cast using a spell slot one level higher than the slot you expend."
+			]
+		},
+		{
+			"name": "Improved Restore",
+			"source": "ARCH-MHB",
+			"className": "Puppeteer",
+			"classSource": "ARCH-MHB",
+			"subclassShortName": "Acolyte",
+			"subclassSource": "ARCH-MHB",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"When your Acolyte Puppet uses its Restore action to roll dice that restore hit points, it can reroll any 1s or 2s. It must use the new rolls."
+			]
+		},
+		{
+			"name": "Improved Conduit",
+			"source": "ARCH-MHB",
+			"className": "Puppeteer",
+			"classSource": "ARCH-MHB",
+			"subclassShortName": "Acolyte",
+			"subclassSource": "ARCH-MHB",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"Conduit can be used twice per day."
+			]
+		},
+		{
+			"name": "Guardian Puppet",
+			"source": "ARCH-MHB",
+			"className": "Puppeteer",
+			"classSource": "ARCH-MHB",
+			"subclassShortName": "Guardian",
+			"subclassSource": "ARCH-MHB",
+			"level": 1,
+			"entries": [
+				"flavor_guardian,",
+				{
+					"type": "statblock",
+					"tag": "creature",
+					"source": "ARCH-MHB",
+					"name": "Guardian Puppet",
+					"page": 2,
+					"collapsed": true
+				}
+			]
+		},
+		{
+			"name": "Improved Guardian",
+			"source": "ARCH-MHB",
+			"className": "Puppeteer",
+			"classSource": "ARCH-MHB",
+			"subclassShortName": "Guardian",
+			"subclassSource": "ARCH-MHB",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"Puppet Improvement"
+			]
+		},
+		{
+			"name": "Improved Guardian2",
+			"source": "ARCH-MHB",
+			"className": "Puppeteer",
+			"classSource": "ARCH-MHB",
+			"subclassShortName": "Guardian",
+			"subclassSource": "ARCH-MHB",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"Puppet Improvement"
+			]
+		},
+		{
+			"name": "Improved Defender",
+			"source": "ARCH-MHB",
+			"className": "Puppeteer",
+			"classSource": "ARCH-MHB",
+			"subclassShortName": "Guardian",
+			"subclassSource": "ARCH-MHB",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"Puppet Improvement"
+			]
+		},
+		{
+			"name": "Jester Puppet",
+			"source": "ARCH-MHB",
+			"className": "Puppeteer",
+			"classSource": "ARCH-MHB",
+			"subclassShortName": "Jester",
+			"subclassSource": "ARCH-MHB",
+			"level": 1,
+			"entries": [
+				"flavor_shinobi",
+				{
+					"type": "statblock",
+					"tag": "creature",
+					"source": "ARCH-MHB",
+					"name": "Jester Puppet",
+					"page": 2,
+					"collapsed": true
+				}
+			]
+		},
+		{
+			"name": "Comedic Misfortune",
+			"source": "ARCH-MHB",
+			"className": "Puppeteer",
+			"classSource": "ARCH-MHB",
+			"subclassShortName": "Jester",
+			"subclassSource": "ARCH-MHB",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"When a creature within 30 feet of the jester rolls a 1 on an ability check, attack roll, or saving throw, as a reaction the puppet can regain one expended use of its Inspire feature.",
+				"The Jester die becomes a d6."
+			]
+		},
+		{
+			"name": "Overflowing Spirit",
+			"source": "ARCH-MHB",
+			"className": "Puppeteer",
+			"classSource": "ARCH-MHB",
+			"subclassShortName": "Jester",
+			"subclassSource": "ARCH-MHB",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"The puppet can now hold up to two uses of its Inspire feature. It still regains only one use per day."
+			]
+		},
+		{
+			"name": "Deepened Fear",
+			"source": "ARCH-MHB",
+			"className": "Puppeteer",
+			"classSource": "ARCH-MHB",
+			"subclassShortName": "Jester",
+			"subclassSource": "ARCH-MHB",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"Disturb Mind can now target two creatures within range and within 5 feet of each other.",
+				"The Jester die becomes a d8."
+			]
+		},
+		{
+			"name": "Shinobi Puppet",
+			"source": "ARCH-MHB",
+			"className": "Puppeteer",
+			"classSource": "ARCH-MHB",
+			"subclassShortName": "Shinobi",
+			"subclassSource": "ARCH-MHB",
+			"level": 1,
+			"entries": [
+				"flavor_shinobi",
+				{
+					"type": "statblock",
+					"tag": "creature",
+					"source": "ARCH-MHB",
+					"name": "Shinobi Puppet",
+					"page": 2,
+					"collapsed": true
+				}
+			]
+		},
+		{
+			"name": "Steady Aim",
+			"source": "ARCH-MHB",
+			"className": "Puppeteer",
+			"classSource": "ARCH-MHB",
+			"subclassShortName": "Shinobi",
+			"subclassSource": "ARCH-MHB",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"The puppet gains advantage on its next attack roll on the current turn. The puppet can use this bonus action only if it hasn’t moved during this turn, and its speed becomes 0 until the end of the current turn."
+			]
+		},
+		{
+			"name": "Evasion",
+			"source": "ARCH-MHB",
+			"className": "Puppeteer",
+			"classSource": "ARCH-MHB",
+			"subclassShortName": "Shinobi",
+			"subclassSource": "ARCH-MHB",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"When the puppet is subjected to an effect that allows it to make a Dexterity saving throw to take only half damage, it instead takes no damage if it succeeds on the saving throw, and only half damage if it fails."
+			]
+		},
+		{
+			"name": "Improved Defender",
+			"source": "ARCH-MHB",
+			"className": "Puppeteer",
+			"classSource": "ARCH-MHB",
+			"subclassShortName": "Shinobi",
+			"subclassSource": "ARCH-MHB",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"Puppet Improvement"
+			]
+		}
+	],
+	"monster": [
+		{
+			"name": "Acolyte Puppet",
+			"source": "ARCH-MHB",
+			"summonedByClass": "Puppeteer|PPT",
+			"size": [
+				"T"
+			],
+			"type": "construct",
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"special": "3 + three times your puppeteer level,"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 10,
+			"dex": 10,
+			"con": 14,
+			"int": 4,
+			"wis": 16,
+			"cha": 14,
+			"save": {
+				"wis": "3 + PB",
+				"cha": "2 + PB"
+			},
+			"senses": [
+				""
+			],
+			"passive": "10",
+			"immune": [
+				"poison",
+				"psychic"
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened",
+				"poisoned"
+			],
+			"languages": [
+				"Understands the languages you speak"
+			],
+			"pbNote": "equals your bonus",
+			"spellcasting": [
+				{
+					"name": "Puppet Spells",
+					"type": "spellcasting",
+					"headerEntries": [
+						"{@spell Bless|phb}, {@spell Lesser Restoration|phb}, {@spell Lightning Bolt|phb}, {@spell Ice Storm|phb}, {@spell Immolation|xge}"
+					]
+				}
+			],
+			"trait": [
+				{
+					"name": "Conduit (1/Day)",
+					"entries": [
+				"{@i (6th-level Puppeteer feature)}",
+				"When the puppet casts a Puppet Spell or you use your Puppet Show feature through it, the spell is treated as if cast using a spell slot one level higher than the slot you expend."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Thunderbolt",
+					"entries": [
+						"Dexterity Saving Throw: DC 8 + PB + your Charisma modifier, each creature in a 5-foot radius at a point within 60 feet. Failure: {@damage 1d6} thunder damage.",
+						"The damage increases when you reach certain levels in the puppeteer class: {@damage 2d6} at 5th level, {@damage 3d6} at 11th level, and {@damage 4d6} at 17th level."
+					]
+				},
+				{
+					"name": "Restore",
+					"entries": [
+						"The puppet can target creature within 30 feet and channel restorative energy. You can expend a number of Occult Dice up to your Charisma modifier (minimum of one). The creature regains hit points equal to the total rolled plus your Charisma modifier."
+					]
+				}
+			],
+			"bonus": [
+			],
+			"reaction": [
+				{
+					"name": "Sharpened Mind (1/Day)",
+					"entries": [
+						"When the puppet fails a Constitution saving throw to maintain concentration on a spell, you can use your reaction to succeed instead."
+					]
+				}
+			],
+			"senseTags": [
+				""
+			],
+			"damageTags": [
+				""
+			],
+			"miscTags": [
+				""
+			]
+		},
+		{
+			"name": "Guardian Puppet",
+			"source": "ARCH-MHB",
+			"summonedByClass": "Puppeteer|PPT",
+			"size": [
+				"T"
+			],
+			"type": "construct",
+			"ac": [
+				{
+				"ac": 15,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"special": "5 + five times your puppeteer level"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 15,
+			"dex": 10,
+			"con": 16,
+			"int": 4,
+			"wis": 10,
+			"cha": 10,
+			"save": {
+				"str": "2 + PB",
+				"con": "3 + PB"
+			},
+			"skill": {
+				"athletics": "3 + PB"
+			},
+			"senses": [
+				""
+			],
+			"passive": "10 + PB",
+			"immune": [
+				"poison",
+				"psychic"
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened",
+				"poisoned"
+			],
+			"languages": [
+				"Understands the languages you speak"
+			],
+			"pbNote": "equals your bonus",
+			"spellcasting": [
+				{
+					"name": "Puppet Spells",
+					"type": "spellcasting",
+					"headerEntries": [
+						"The puppet can cast the following spells using your spellslots: {@spell Absorb Elements|xge}, {@spell Warding Bond|phb}, {@spell Protection from Energy|phb}, {@spell Fire Shield|phb}, and {@spell Circle of Power|phb}"
+					]
+				}
+			],
+			"trait": [
+				{
+					"name": "Hardened Frame",
+					"entries": [
+						"The puppet gains a bonus to it's AC equal to your Charisma modifier."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Puppet Slam",
+					"entries": [
+						"{@atkr m} {@hitYourSpellAttack Bonus equals your spell attack modifier}, reach 5 ft. {@h}{@damage 1d6 + 2} plus your Charisma modifier Bludgeoning damage, and the target can't take {@action Opportunity Attack|PHB|Opportunity Attacks} until the start of its next turn."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Deflect Attacks",
+					"entries": [
+						"When a creature within 5 feet of the puppet is hit by an attack, you can use your reaction to force the attacker to reroll the attack roll. Until the start of your next turn, all other attack rolls made against that creature are made with disadvantage, as long as the puppet remains within 5 feet of it."
+					]
+				}
+			],
+			"senseTags": [
+				""
+			],
+			"damageTags": [
+				""
+			],
+			"miscTags": [
+				""
+			]
+		},
+		{
+			"name": "Jester Puppet",
+			"source": "ARCH-MHB",
+			"summonedByClass": "Puppeteer|PPT",
+			"size": [
+				"T"
+			],
+			"type": "construct",
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"special": "4 + four times your puppeteer level,"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 10,
+			"dex": 14,
+			"con": 12,
+			"int": 4,
+			"wis": 10,
+			"cha": 14,
+			"save": {
+				"dex": "2 + PB",
+				"cha": "2 + PB"
+			},
+			"senses": [
+				""
+			],
+			"passive": "10",
+			"immune": [
+				"poison",
+				"psychic"
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened",
+				"poisoned"
+			],
+			"languages": [
+				"Understands the languages you speak"
+			],
+			"pbNote": "equals your bonus",
+			"spellcasting": [
+				{
+					"name": "Puppet Spells",
+					"type": "spellcasting",
+					"headerEntries": [
+						"{@spell Tasha's Hideous Laughter|phb}, {@spell Vortex Warp|scc}, {@spell Stinking Cloud|phb}, {@spell Dimension Door|phb}, {@spell Synaptic Static|xge}"
+					]
+				}
+			],
+			"trait": [
+			],
+			"action": [
+				{
+					"name": "Disturb Mind",
+					"entries": [
+						"Wisdom Saving Throw: DC 8 + PB + your Charisma modifier, one creature within 60 feet. Failure: {@damage 1d4} psychic damage and has disadvantage on the next attack roll it makes before the end of its next turn.",
+						"The damage increases when you reach certain levels in the puppeteer class: {@damage 2d4} at 5th level, {@damage 3d4} at 11th level, and {@damage 4d4} at 17th level."
+					]
+				}
+			],
+			"bonus": [
+				{
+					"name": "Inspire (1/day)",
+					"entries": [
+						"The puppet grants one other creature it can see within 60 feet a Jester die (d4). Once within the next 10 minutes, the creature can roll the die and add the number rolled to one ability check, attack roll, or saving throw it makes. The creature can choose to roll the die after rolling the d20, but before DM says whether the roll succeeds or fails. A creature cannot have more than one Jester die at a time and once the die is rolled, it is lost." 
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Comedic Misfortune",
+					"entries": [
+						"{@i (6th-level Puppeteer feature)}",
+						"When a creature within 30 feet of the jester rolls a 1 on an ability check, attack roll, or saving throw, as a reaction the puppet can regain one expended use of its Inspire feature."
+					]
+				},
+				{
+					"name": "Fool's Tumble",
+					"entries": [
+						"After the puppet takes damage from a melee attack, it can move up to half its speed as an reaction. This movement doesn't provoke opportunity attacks."
+					]
+				}
+			],
+			"senseTags": [
+				""
+			],
+			"damageTags": [
+				""
+			],
+			"miscTags": [
+				""
+			]
+		},
+		{
+			"name": "Shinobi Puppet",
+			"source": "ARCH-MHB",
+			"summonedByClass": "Puppeteer|PPT",
+			"size": [
+				"T"
+			],
+			"type": "construct",
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"special": "4 + four times your puppeteer level,"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 12,
+			"dex": 16,
+			"con": 12,
+			"int": 4,
+			"wis": 10,
+			"cha": 10,
+			"save": {
+				"dex": "3 + PB",
+				"str": "1 + PB"
+			},
+			"skill": {
+				"acrobatics": "3 + PB",
+				"stealth": "3 + PB"
+			},
+			"senses": [
+				""
+			],
+			"passive": "10",
+			"immune": [
+				"poison",
+				"psychic"
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened",
+				"poisoned"
+			],
+			"languages": [
+				"Understands the languages you speak"
+			],
+			"pbNote": "equals your bonus",
+			"spellcasting": [
+				{
+					"name": "Puppet Spells",
+					"type": "spellcasting",
+					"headerEntries": [
+						"The puppet can cast the following spells using your spellslots: {@spell Ensnaring Strike|phb}, {@spell Pass without Trace|phb}, {@spell Conjure Barrage|phb}, {@spell Freedom of Movement|phb}, and {@spell Conjure Volley|phb}"
+					]
+				}
+			],
+			"trait": [
+				{
+					"name": "Sneak Attack (1/Turn)",
+					"entries": [
+				"The puppet deals an extra {@damage 1d6} damage when it hits a target with a weapon attack and has advantage on the attack roll, or when the target is within 5 feet of an enemy of the target that isn't {@condition incapacitated} and the puppet doesn't have disadvantage on the attack roll. The extra damage increases when you reach certain levels in the puppeteer class: {@damage 2d6} at 7th level, {@damage 3d6} at 11th level, and {@damage 4d6} at 15th level."
+					]
+				},
+				{
+					"name": "Evasion",
+					"entries": [
+						"{@i (10th-level Puppeteer feature)}",
+						"When the puppet is subjected to an effect that allows it to make a Dexterity saving throw to take only half damage, it instead takes no damage if it succeeds on the saving throw, and only half damage if it fails."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Throw Shuriken",
+					"entries": [
+						"{@atkr r} {@hitYourSpellAttack Bonus equals your spell attack modifier}, reach 30/60 ft. {@h}{@damage 1d4} plus your Charisma modifier piercing damage."
+					]
+				}
+			],			
+			"bonus": [
+				{
+					"name": "Steady Aim",
+					"entries": [
+						"{@i (6th-level Puppeteer feature)}",
+						"The puppet gains advantage on its next attack roll on the current turn. The puppet can use this bonus action only if it hasn’t moved during this turn, and its speed becomes 0 until the end of the current turn."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Substitution (1/Day)",
+					"entries": [
+						"When a creature hits the puppet with an attack, you can use your reaction to cause the attack to miss and teleport the Masterworks to 30 feet to an unoccupied space you can see."
+					]
+				}
+			],
+			"senseTags": [
+				""
+			],
+			"damageTags": [
+				""
+			],
+			"miscTags": [
+				""
+			]
+		}
+	],
+	"action": [
+		{
+			"name": "Command Puppet",
+			"source": "ARCH-MHB",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				},
+				{
+					"number": 1,
+					"unit": "bonus"
+				},
+				{
+					"number": 1,
+					"unit": "reaction"
+				}
+			],
+			"entries": [
+				"Your puppets only act when you command them. They do not have their own reactions and can only take reactions when you expend your reaction to do so.",
+				{
+					"type": "entries",
+					"name": "Major Command",
+					"entries": [
+						"As an action, you can command one of your puppets to take an action. As part of this command, the puppet can move up to its speed and use its bonus action, if it has one."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Swift Command",
+					"entries": [
+						"As a bonus action, you can command one of your puppets to either move up to its speed or make one attack."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Reactive Command",
+					"entries": [
+						"When a puppet’s reaction is triggered, you can use your reaction to have that puppet perform the reaction described in its stat block."
+					]
+				}
+			]
+		}
+	],
+	"race": [
+		{
+			"name": "Nagavarii",
+			"source": "ARCH-MHB",
+			"__prop": "race",
+			"ability": [
+				{
+					"choose": {
+						"weighted": {
+							"from": [
+								"str",
+								"dex",
+								"con",
+								"int",
+								"wis",
+								"cha"
+							],
+							"weights": [
+								2,
+								1
+							]
+						}
+					}
+				},
+				{
+					"choose": {
+						"weighted": {
+							"from": [
+								"str",
+								"dex",
+								"con",
+								"int",
+								"wis",
+								"cha"
+							],
+							"weights": [
+								1,
+								1,
+								1
+							]
+						}
+					}
+				}
+			],
+			"creatureTypes": [
+				"fey"
+			],
+			"size": [
+				"S",
+				"M"
+			],
+			"speed": {
+				"walk": 30,
+				"climb": true
+			},
+			"skillProficiencies": [
+				{
+					"choose": {
+						"from": [
+							"acrobatics",
+							"arcana",
+							"athletics",
+							"perception",
+							"stealth",
+							"survival"
+						],
+						"count": 2
+					}
+				}
+			],
+			"entries": [
+				{
+					"name": "Size",
+					"entries": [
+						"You are Medium or Small. You choose the size when you select this race."
+					]
+				},
+				{
+					"name": "Creature Type",
+					"entries": [
+						"You are a Fey."
+					]
+				},
+				{
+					"name": "Darkvision",
+					"entries": [
+						"You can see in dim light within 60 feet of you as if it were bright light and in darkness as if it were dim light. You discern colors in that darkness only as shades of gray."
+					]
+				},
+				{
+					"name": "Natural Armor",
+					"entries": [
+						"You have tough, scaly skin. When you aren't wearing armor, your base AC is 13 + Dexterity modifier. You can use your natural armor to determine your AC if the armor you wear would leave you with a lower AC."
+					]
+				},
+				{
+					"name": "Serpent's Intuition",
+					"entries": [
+						"You gain proficiency in two of the following skills of your choice: {@skill Acrobatics}, {@skill Arcana}, {@skill Athletics}, {@skill Perception}, {@skill Stealth}, or {@skill Survival}."
+					]
+				},
+				{
+					"name": "Serpentine Form",
+					"entries": [
+						"Your limbless, serpentine body affects how you interact with your environment:",
+						{
+							"type": "list",
+							"items": [
+								"You cannot wear armor unless it is made to fit your unique form."
+							]
+						},
+						{
+							"type": "list",
+							"items": [
+								"You can wield one-handed weapons, shields, and tools, or manipulate objects using your tail."
+							]
+						},
+						{
+							"type": "list",
+							"items": [
+								"You can perform somatic components using movements of your body. During this, the gem on your head softly glows."
+							]
+						},
+						{
+							"type": "list",
+							"items": [
+								"You can grapple one creature at a time by coiling your body around it. This does not prevent you from using weapons or other objects with your tail."
+							]
+						}
+					]
+				},
+				{
+					"name": "Slithering Agility",
+					"entries": [
+						"Moving while {@condition prone} costs you no extra movement, and standing up from {@condition prone} costs you only 5 feet of movement. Additionally, you have a climbing speed equal to your walking speed."
+					]
+				},
+				{
+					"name": "Languages",
+					"entries": [
+						"You can speak, read, and write {@language Common} and {@language Sylvan}."
+					]
+				}
+			],
+			"fluff": {
+				"images": [
+				],
+				"entries": [
+					"The Nagavarii are serpentine fey born from the feywilds deep jungles and shimmering forests. They have colorful, tough scales, with a softly glowing gem atop their foreheads marking their connection to the feywilds magic.",
+					"Known for subtlety and cunning, the Nagavarii use their tails to wield weapons and tools with great precision. They are famed for stealing and hoarding magical artifacts, which they can drain of their magic to lengthen their lifespans.",
+					"Most Nagavarii remain in the feywilds hidden places, but over time some tribes have ventured into the primal plane, carrying their secrets beyond the feywild."
+					]
+				},
+				"languageProficiencies": [
+				{
+					"common": true,
+					"sylvan": true
+				}
+			]
+		}
+	]
+}
