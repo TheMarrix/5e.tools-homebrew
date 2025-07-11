@@ -569,7 +569,7 @@
 					"type": "entries",
 					"name": "Spellcasting Ability",
 					"entries": [
-						"Charisma is your spellcasting ability for your puppeteer spells; your mastery of occult rites and craftsmanship allows you to shape and channel magic. You use your Charisma whenever a puppeteer spell refers to your spellcasting ability. In addition, you use your Charisma modifier when setting the saving throw DC for a puppeteer spell you cast and when making an attack roll with one.",
+						"Charisma is your spellcasting ability for your puppeteer spells. Your mastery of occult rites and craftsmanship allows you to shape and channel magic. You use your Charisma whenever a puppeteer spell refers to your spellcasting ability. In addition, you use your Charisma modifier when setting the saving throw DC for a puppeteer spell you cast and when making an attack roll with one.",
 						{
 							"type": "abilityDc",
 							"name": "Spell",
