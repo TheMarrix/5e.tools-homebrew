@@ -9,7 +9,7 @@
 					"Marrix"
 				],
 				"version": "1.0",
-				"url": "https://github.com/TheMarrix/5e.tools-homebrew",
+				"url": "",
 				"color": "6f31a3"
 			}
 		]
@@ -83,7 +83,7 @@
 					"a {@item light crossbow|phb} and {@item crossbow bolts (20)|phb|20 bolts}",
 					"(a) a {@item entertainer's pack|phb} or (b) a {@item scholar's pack|phb}",
 					"(a) {@item potter's tools|phb} or (b) {@item weaver's tools|phb} or (c) {@item woodcarver's tools|phb}",
-					"{@item leather armor|phb} and any {@filter simple weapon|items|source=phb|category=basic|type=simple weapon}"
+					"{@item leather armor|phb}, any {@filter simple weapon|items|source=phb|category=basic|type=simple weapon} and 10 gp"
 				],
 				"goldAlternative": "{@dice 5d4 × 10|5d4 × 10|Starting Gold}",
 				"defaultData": [
@@ -117,7 +117,8 @@
 							"leather armor|phb",
 							{
 								"equipmentType": "weaponSimple"
-							}
+							},
+							"10 gp"
 						]
 					}
 				]
@@ -452,17 +453,17 @@
 					"classFeature": "Puppet Improvement|Puppeteer|ARCH-MHB|10",
 					"gainSubclassFeature": true
 				},
-				"Resonance|Puppeteer|ARCH-MHB|11",
+				"11th_feature|Puppeteer|ARCH-MHB|11",
 				"Ability Score Improvement|Puppeteer|ARCH-MHB|12",
 				{
 					"classFeature": "Puppet Improvement|Puppeteer|ARCH-MHB|14",
 					"gainSubclassFeature": true
 				},
-				"Magic Item Savant|Puppeteer|ARCH-MHB|15",
+				"15th_feature|Puppeteer|ARCH-MHB|15",
 				"Ability Score Improvement|Puppeteer|ARCH-MHB|16",
-				"Magic Item Master|Puppeteer|ARCH-MHB|18",
+				"18th_feature|Puppeteer|ARCH-MHB|18",
 				"Ability Score Improvement|Puppeteer|ARCH-MHB|19",
-				"Soul of Artifice|Puppeteer|ARCH-MHB|20"
+				"20th_feature|Puppeteer|ARCH-MHB|20"
 			],
 			"subclassTitle": "Puppetman",
 			"hasFluff": true
@@ -568,7 +569,7 @@
 					"type": "entries",
 					"name": "Spellcasting Ability",
 					"entries": [
-						"Charisma is your spellcasting ability for your puppeteer spells; your force of personality and strength of presence allows you to manipulate magic with exceptional skill. You use your Charisma whenever a puppeteer spell refers to your spellcasting ability. In addition, you use your Charisma modifier when setting the saving throw DC for a puppeteer spell you cast and when making an attack roll with one.",
+						"Charisma is your spellcasting ability for your puppeteer spells; your mastery of occult rites and craftsmanship allows you to shape and channel magic. You use your Charisma whenever a puppeteer spell refers to your spellcasting ability. In addition, you use your Charisma modifier when setting the saving throw DC for a puppeteer spell you cast and when making an attack roll with one.",
 						{
 							"type": "abilityDc",
 							"name": "Spell",
@@ -603,8 +604,8 @@
 					"type": "entries",
 					"name": "Puppet Spells",
 					"entries": [
-						"You always have certain spells prepared after you reach particular levels in this class, as shown in the puppets spell table. These spells count as puppeteer spells for you, but they don’t count against the number of puppeteer spells you prepare.",
-						"When you cast a puppet spell, it originates from the matching puppet instead of you. The puppet is considered the point of origin for the spell, and any concentration required is maintained by the puppet instead of you. You must still use your own senses to perceive and choose targets for the spell. Puppet spells you cast do not require material components, regardless of cost."
+						"Each of your bound puppets has a list of spells it can cast using your spell slots. When a puppet casts a spell this way, it uses your Spell Attack modifier and Spell Save DC. If the spell requires concentration, the puppet maintains it instead of you.",
+						"You must still use your own senses to perceive and choose targets for these spells. Puppet spells do not require material components, regardless of their cost."
 					]
 				}
 			]
@@ -634,7 +635,7 @@
 			"classSource": "ARCH-MHB",
 			"level": 4,
 			"entries": [
-				"When you reach 4th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+				"You can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
 				"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
 			]
 		},
@@ -679,7 +680,7 @@
 			"classSource": "ARCH-MHB",
 			"level": 8,
 			"entries": [
-				"When you reach 8th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+				"You can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
 				"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
 			]
 		},
@@ -706,15 +707,13 @@
 			]
 		},
 		{
-			"name": "Resonance",
+			"name": "11th_feature",
 			"source": "ARCH-MHB",
 			"className": "Puppeteer",
 			"classSource": "ARCH-MHB",
 			"level": 11,
 			"entries": [
-				"Through refined craftsmanship, you can anchor powerful magic within your creations.",
-				"Each of your puppets can attune to one magic item of rare rarity or lower, as long as the item has no other prerequisites (such as class, race, alignment, or spellcasting ability). A puppet gains the item’s passive benefits and can activate items that require spoken commands, conscious intent, or manual operation when commanded.",
-				"During a short or long rest, you can use your Puppetcrafter’s Tools to attune or un-attune one magic item to one of your puppets, provided the item is in your possession. If a puppet is destroyed, its attunement to any magic item immediately ends."
+				"-"
 			]
 		},
 		{
@@ -724,7 +723,7 @@
 			"classSource": "ARCH-MHB",
 			"level": 12,
 			"entries": [
-				"When you reach 12th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+				"You can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
 				"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
 			]
 		},
@@ -735,24 +734,17 @@
 			"classSource": "ARCH-MHB",
 			"level": 14,
 			"entries": [
-				"You gain a feature granted by your Puppeteer Specialist choice."
+				"Your puppets become stronger."
 			]
 		},
 		{
-			"name": "Magic Item Savant",
+			"name": "15th_feature",
 			"source": "ARCH-MHB",
 			"className": "Puppeteer",
 			"classSource": "ARCH-MHB",
 			"level": 15,
 			"entries": [
-				"Your skill with magic items deepens:",
-				{
-					"type": "list",
-					"items": [
-						"You can attune to up to five magic items at once.",
-						"You ignore all class, race, spell, and level requirements on attuning to or using a magic item."
-					]
-				}
+				"-"
 			]
 		},
 		{
@@ -762,18 +754,18 @@
 			"classSource": "ARCH-MHB",
 			"level": 16,
 			"entries": [
-				"When you reach 16th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+				"You can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
 				"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
 			]
 		},
 		{
-			"name": "Magic Item Master",
+			"name": "18th_feature",
 			"source": "ARCH-MHB",
 			"className": "Puppeteer",
 			"classSource": "ARCH-MHB",
 			"level": 18,
 			"entries": [
-				"You can now attune to up to six magic items at once."
+				"-"
 			]
 		},
 		{
@@ -783,25 +775,18 @@
 			"classSource": "ARCH-MHB",
 			"level": 19,
 			"entries": [
-				"When you reach 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+				"You can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
 				"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
 			]
 		},
 		{
-			"name": "Soul of Artifice",
+			"name": "20th_feature",
 			"source": "ARCH-MHB",
 			"className": "Puppeteer",
 			"classSource": "ARCH-MHB",
 			"level": 20,
 			"entries": [
-				"You have developed a mystical connection to your magic items, which you can draw on for protection:",
-				{
-					"type": "list",
-					"items": [
-						"You gain a +1 bonus to all saving throws per magic item you are currently attuned to.",
-						"If you're reduced to 0 hit points but not killed outright, you can use your reaction to end one of your puppeteer infusions, causing you to drop to 1 hit point instead of 0."
-					]
-				}
+				"-"
 			]
 		}
 	],
@@ -911,7 +896,7 @@
 			"level": 10,
 			"header": 2,
 			"entries": [
-				"When your Acolyte Puppet uses its Restore action to roll dice that restore hit points, it can reroll any 1s or 2s. It must use the new rolls."
+				"Occult Heal can now be used three times per day. When you roll to restore hit points with it, you can reroll any results of 1 or 2. You must use the new rolls."
 			]
 		},
 		{
@@ -924,7 +909,7 @@
 			"level": 14,
 			"header": 2,
 			"entries": [
-				"Conduit can be used twice per day."
+				"When you use your Puppet Show feature to cast a spell through the puppet, you can choose to have the puppet maintain concentration on the spell instead of you."
 			]
 		},
 		{
@@ -1185,7 +1170,7 @@
 					]
 				},
 				{
-					"name": "Restore",
+					"name": "Restore (2/day)",
 					"entries": [
 						"The puppet can target creature within 30 feet and channel restorative energy. You can expend a number of Occult Dice up to your Charisma modifier (minimum of one). The creature regains hit points equal to the total rolled plus your Charisma modifier."
 					]
@@ -1269,7 +1254,7 @@
 					"name": "Puppet Spells",
 					"type": "spellcasting",
 					"headerEntries": [
-						"The puppet can cast the following spells using your spellslots: {@spell Absorb Elements|xge}, {@spell Warding Bond|phb}, {@spell Protection from Energy|phb}, {@spell Fire Shield|phb}, and {@spell Circle of Power|phb}"
+						"{@spell Absorb Elements|xge}, {@spell Warding Bond|phb}, {@spell Protection from Energy|phb}, {@spell Fire Shield|phb}, {@spell Circle of Power|phb}"
 					]
 				}
 			],
@@ -1469,7 +1454,7 @@
 					"name": "Puppet Spells",
 					"type": "spellcasting",
 					"headerEntries": [
-						"The puppet can cast the following spells using your spellslots: {@spell Ensnaring Strike|phb}, {@spell Pass without Trace|phb}, {@spell Conjure Barrage|phb}, {@spell Freedom of Movement|phb}, and {@spell Conjure Volley|phb}"
+						"{@spell Ensnaring Strike|phb}, {@spell Pass without Trace|phb}, {@spell Conjure Barrage|phb}, {@spell Freedom of Movement|phb}, {@spell Conjure Volley|phb}"
 					]
 				}
 			],
